@@ -3,77 +3,75 @@
 ### **Task 1: Working with Git and GitHub Basics**
 
 **Task Description**
-Start by understanding version control. Practice cloning repositories, making changes, committing those changes, and pushing them back to GitHub. Create branches and open pull requests to simulate collaborative workflows. Learn to review and merge pull requests to complete the development cycle.
-**Expected Task Outcomes**
-•	Understand the fundamentals of version control and distributed repositories  
-•	Learn how to solve merge conflict - git rebase
-•	Create and manage branches for feature development  
-•	Contribute to atleast one open source project
-• Implement and learn about git revert, git cherry-pick
-• Create a customized Git workflow - Git config
-  
-**Resource Links**
-•	Git Official Documentation: https://git-scm.com/doc   
-•	GitHub Learning Lab: https://github.com/apps/github-learning-lab  
-•	Pro Git Book (free): https://git-scm.com/book/en/v2  
+Start by understanding version control. Practice cloning repositories, making changes, committing those changes, and pushing them back to GitHub. Create branches and open pull requests to simulate collaborative workflows. Learn to review and merge pull requests to complete the development cycle.  
+**Expected Task Outcomes**  
+•	Understand the fundamentals of version control and distributed repositories   
+•	Learn how to solve merge conflict - git rebase   
+•	Create and manage branches for feature development    
+•	Contribute to atleast one open source project   
+• Implement and learn about git revert, git cherry-pick  
+• Create a customized Git workflow - Git config   
+    
+**Resource Links**  
+•	Git Official Documentation: https://git-scm.com/doc     
+•	GitHub Learning Lab: https://github.com/apps/github-learning-lab   
+•	Pro Git Book (free): https://git-scm.com/book/en/v2    
 
 
 ### **Task 2: Exploring Docker Fundamentals**
 **Task Description**
-Begin with learning the difference between containers and virtual machines. Practice using Docker CLI commands to pull images from Docker Hub, run containers, inspect running processes, view logs, and manage container lifecycles such as stopping and removing containers.
-**Expected Task Outcomes**
-•	Articulate the key differences between containers and virtual machines
-•	Pull images from Docker Hub and run containers using CLI commands
-•	Inspect running processes, view container logs, and understand container state
-•	Manage full container lifecycles: start, stop, restart, and remove
-**Resource Links**
-•	Docker Official Documentation: https://docs.docker.com/
-•	Docker Hub: https://hub.docker.com/
-•	Play with Docker (browser-based lab): https://labs.play-with-docker.com/
+Begin with learning the difference between containers and virtual machines. Practice using Docker CLI commands to pull images from Docker Hub, run containers, inspect running processes, view logs, and manage container lifecycles such as stopping and removing containers.  
+**Expected Task Outcomes**  
+•	Articulate the key differences between containers and virtual machines  
+•	Pull images from Docker Hub and run containers using CLI commands   
+•	Inspect running processes, view container logs, and understand container state  
+•	Manage full container lifecycles: start, stop, restart, and remove   
+**Resource Links**  
+•	Docker Official Documentation: https://docs.docker.com/  
+•	Docker Hub: https://hub.docker.com/   
+•	Play with Docker (browser-based lab): https://labs.play-with-docker.com/   
+
+### **Task 3: Dockerize a Simple Application**  
+
+**Task Description**   
+Learn Dockerfile basics and how to containerize applications. Write a Dockerfile for a simple static website or API provided as starter code. Build your Docker image from this Dockerfile and run the application container locally. Verify successful deployment by accessing the app from your browser.  
+**Expected Task Outcomes**   
+•	Write a functional Dockerfile to containerize a provided application  
+•	Build a Docker image and run it as a container on your local machine  
+•	Map container ports to the host machine to access the app in a browser   
+•	Understand image layers and how each Dockerfile instruction creates a layer   
+**Resource Links**   
+•	Dockerfile Reference: https://docs.docker.com/engine/reference/builder/   
+•	Best Practices for Writing Dockerfiles: https://docs.docker.com/develop/develop-images/dockerfile_best-practices/  
 
 
-### **Task 3: Dockerize a Simple Application**
+### **Task 4: Launch and Manage an AWS EC2 Instance**  
 
-**Task Description**
-Learn Dockerfile basics and how to containerize applications. Write a Dockerfile for a simple static website or API provided as starter code. Build your Docker image from this Dockerfile and run the application container locally. Verify successful deployment by accessing the app from your browser.
-**Expected Task Outcomes**
-•	Write a functional Dockerfile to containerize a provided application
-•	Build a Docker image and run it as a container on your local machine
-•	Map container ports to the host machine to access the app in a browser
-•	Understand image layers and how each Dockerfile instruction creates a layer
-**Resource Links**
-•	Dockerfile Reference: https://docs.docker.com/engine/reference/builder/
-•	Best Practices for Writing Dockerfiles: https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
-
-
-### **Task 4: Launch and Manage an AWS EC2 Instance**
-
-**Task Description**
-Explore AWS EC2 service and different instance types. Launch a free-tier EC2 instance, configure the security group to allow SSH access, and connect securely using SSH. Install a lightweight web server such as Nginx or Apache on the instance and ensure it is accessible via the public IP. Also, understand how CPU and memory work in a VM.
-**Expected Task Outcomes**
-•	Launch an EC2 instance using the AWS Free Tier and configure its security group
-•	Connect to the instance securely over SSH using a .pem key pair
-•	Install and start a web server (Nginx or Apache) and confirm access via public IP
-•	Understand EC2 instance types, CPU credits, and memory allocation in cloud VMs
-**Resource Links**
-•	AWS EC2 Getting Started Guide: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
-•	AWS Free Tier Details: https://aws.amazon.com/free/
-•	Nginx Beginner's Guide: https://nginx.org/en/docs/beginners_guide.html
-
-
+**Task Description**  
+Explore AWS EC2 service and different instance types. Launch a free-tier EC2 instance, configure the security group to allow SSH access, and connect securely using SSH. Install a lightweight web server such as Nginx or Apache on the instance and ensure it is accessible via the public IP. Also, understand how CPU and memory work in a VM.  
+**Expected Task Outcomes**   
+•	Launch an EC2 instance using the AWS Free Tier and configure its security group  
+•	Connect to the instance securely over SSH using a .pem key pair  
+•	Install and start a web server (Nginx or Apache) and confirm access via public IP  
+•	Understand EC2 instance types, CPU credits, and memory allocation in cloud VMs  
+**Resource Links**   
+•	AWS EC2 Getting Started Guide: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html  
+•	AWS Free Tier Details: https://aws.amazon.com/free/  
+•	Nginx Beginner's Guide: https://nginx.org/en/docs/beginners_guide.html  
+  
 ### **Task 5: Kubernetes Basics and Writing Pod Specs**
 
-**Task Description**
-Understand key Kubernetes concepts and the structure of YAML manifest files. Write a simple Pod specification YAML to run a basic container (e.g., Nginx). Apply the manifest to your Minikube cluster and verify the Pod is running. Explore commands to get Pod status and logs.
-**Expected Task Outcomes**
-•	Explain core Kubernetes concepts: Nodes, Pods, Clusters, and the Control Plane
-•	Write a valid Pod manifest YAML file to deploy a container image
-•	Apply manifests to a local Minikube cluster using kubectl
-•	Use kubectl commands to inspect Pod status, describe Pods, and view logs
-**Resource Links**
-•	Kubernetes Official Documentation: https://kubernetes.io/docs/home/
-•	Minikube Getting Started: https://minikube.sigs.k8s.io/docs/start/
-•	Kubernetes YAML Basics: https://kubernetes.io/docs/concepts/workloads/pods/
+**Task Description**  
+Understand key Kubernetes concepts and the structure of YAML manifest files. Write a simple Pod specification YAML to run a basic container (e.g., Nginx). Apply the manifest to your Minikube cluster and verify the Pod is running. Explore commands to get Pod status and logs.  
+**Expected Task Outcomes**  
+•	Explain core Kubernetes concepts: Nodes, Pods, Clusters, and the Control Plane  
+•	Write a valid Pod manifest YAML file to deploy a container image  
+•	Apply manifests to a local Minikube cluster using kubectl  
+•	Use kubectl commands to inspect Pod status, describe Pods, and view logs  
+**Resource Links**  
+•	Kubernetes Official Documentation: https://kubernetes.io/docs/home/  
+•	Minikube Getting Started: https://minikube.sigs.k8s.io/docs/start/  
+•	Kubernetes YAML Basics: https://kubernetes.io/docs/concepts/workloads/pods/  
 
 
 ### **Task 6: Manage AWS S3 and IAM with CLI**
