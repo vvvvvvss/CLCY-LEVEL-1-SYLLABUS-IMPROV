@@ -130,7 +130,7 @@ Understand how to handle sensitive data and configuration within Kubernetes usin
 •	Kubernetes Secrets: https://kubernetes.io/docs/concepts/configuration/secret/  
 •	Kubernetes ConfigMaps: https://kubernetes.io/docs/concepts/configuration/configmap/  
   
-**Task 9: Deploy an App to Push Files from Kubernetes to S3**  
+### **Task 9: Deploy an App to Push Files from Kubernetes to S3**  
   
 **Task Description**  
 Build and deploy an application on Kubernetes capable of pushing files from a locally hosted app server to AWS S3. Use Kubernetes Secrets for storing AWS credentials securely. Validate the file upload process from the app interface to the S3 bucket and verify files in the cloud storage.   
