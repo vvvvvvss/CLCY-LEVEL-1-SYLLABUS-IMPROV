@@ -74,73 +74,73 @@ Understand key Kubernetes concepts and the structure of YAML manifest files. Wri
 •	Kubernetes YAML Basics: https://kubernetes.io/docs/concepts/workloads/pods/  
 
 
-### **Task 6: Manage AWS S3 and IAM with CLI**
+### **Task 6: Manage AWS S3 and IAM with CLI**  
 
-**Task Description**
-Study AWS IAM concepts like users, roles, and policies, and learn to configure the AWS CLI. Create an IAM user with permissions to access S3, then create an S3 bucket from the CLI. Practice uploading, listing, and downloading files to/from the bucket using AWS CLI commands, reinforcing cloud storage handling.
-**Expected Task Outcomes**
-•	Understand IAM concepts: users, groups, roles, and least-privilege policies
-•	Configure the AWS CLI with credentials and verify connectivity to AWS services
-•	Create an S3 bucket and manage objects via CLI (upload, list, download, delete)
-•	Apply IAM policies to restrict S3 access to specific users or roles
-**Resource Links**
-•	AWS IAM Documentation: https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html
-•	AWS CLI S3 Command Reference: https://docs.aws.amazon.com/cli/latest/reference/s3/
-•	AWS S3 Getting Started: https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html
-
-
-### **Task 7: Deploy a Containerized Application on Kubernetes**
-**Task Description**
-Learn to write YAML manifests for Kubernetes deployments and services. Package your Dockerized app and deploy it using YAML files. Expose the app within the cluster via ClusterIP and externally using NodePort. Validate by accessing the app through the configured NodePort on your local machine.
-**Expected Task Outcomes**
-•	Write Deployment YAML to deploy multiple replicas of a containerized application
-•	Expose the deployment within the cluster using a ClusterIP Service
-•	Expose the deployment externally using a NodePort Service and access it in a browser
-•	Scale deployments up and down using kubectl and observe rolling updates
-**Resource Links**
-•	Kubernetes Deployments: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
-•	Kubernetes Services: https://kubernetes.io/docs/concepts/services-networking/service/
-
-
-### **Task 8: Use Kubernetes Secrets and Environment Variables**
-
-**Task Description**
-Understand how to handle sensitive data and configuration within Kubernetes using Secrets and ConfigMaps. Create a ConfigMap and mount it onto a deployment and let the underlying application use the configuration. Create a Kubernetes Secret with AWS credentials, update deployment YAML to use these Secrets as environment variables, and deploy the updated app. Verify that the app uses the credentials securely to interact with AWS S3.
-**Expected Task Outcomes**
-•	Create and apply ConfigMaps to inject non-sensitive configuration into Pods
-•	Create Kubernetes Secrets to store AWS credentials without hardcoding them
-•	Mount Secrets as environment variables in a Deployment and verify their consumption
-•	Understand the difference between Secrets and ConfigMaps and when to use each
-**Resource Links**
-•	Kubernetes Secrets: https://kubernetes.io/docs/concepts/configuration/secret/
-•	Kubernetes ConfigMaps: https://kubernetes.io/docs/concepts/configuration/configmap/
-
-**Task 9: Deploy an App to Push Files from Kubernetes to S3**
-
-**Task Description**
-Build and deploy an application on Kubernetes capable of pushing files from a locally hosted app server to AWS S3. Use Kubernetes Secrets for storing AWS credentials securely. Validate the file upload process from the app interface to the S3 bucket and verify files in the cloud storage.
-**Expected Task Outcomes**
-•	Build and containerize a file-upload application using a language/framework of your choice
-•	Deploy the app on Minikube with AWS credentials injected via Kubernetes Secrets
-•	Successfully upload a file from the app UI/CLI and verify it appears in the S3 bucket
-•	Integrate all Level 1 concepts: Docker, Kubernetes, IAM, S3, and Secrets into one working pipeline
-**Resource Links**
-•	AWS SDK for Python (boto3): https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
-•	AWS SDK for Node.js: https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/
-•	Kubernetes Secrets in Pods: https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/
-
----
-
-## CY - Cybersecurity
-Welcome to the Marvel Cybersecurity Module.  
-Level 1 of this module is designed to build a strong foundation by covering the essentials of computer networking, protocols, Windows, Linux, and core cybersecurity principles. These fundamentals are crucial—cybersecurity is not just about tools, but about understanding how systems work.  
+**Task Description**  
+Study AWS IAM concepts like users, roles, and policies, and learn to configure the AWS CLI. Create an IAM user with permissions to access S3, then create an S3 bucket from the CLI. Practice uploading, listing, and downloading files to/from the bucket using AWS CLI commands, reinforcing cloud storage handling.  
+**Expected Task Outcomes**  
+•	Understand IAM concepts: users, groups, roles, and least-privilege policies  
+•	Configure the AWS CLI with credentials and verify connectivity to AWS services  
+•	Create an S3 bucket and manage objects via CLI (upload, list, download, delete)  
+•	Apply IAM policies to restrict S3 access to specific users or roles  
+**Resource Links**  
+•	AWS IAM Documentation: https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html  
+•	AWS CLI S3 Command Reference: https://docs.aws.amazon.com/cli/latest/reference/s3/  
+•	AWS S3 Getting Started: https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html  
+  
+  
+### **Task 7: Deploy a Containerized Application on Kubernetes**  
+**Task Description**  
+Learn to write YAML manifests for Kubernetes deployments and services. Package your Dockerized app and deploy it using YAML files. Expose the app within the cluster via ClusterIP and externally using NodePort.   Validate by accessing the app through the configured NodePort on your local machine.  
+**Expected Task Outcomes**  
+•	Write Deployment YAML to deploy multiple replicas of a containerized application  
+•	Expose the deployment within the cluster using a ClusterIP Service  
+•	Expose the deployment externally using a NodePort Service and access it in a browser  
+•	Scale deployments up and down using kubectl and observe rolling updates  
+**Resource Links**  
+•	Kubernetes Deployments: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/  
+•	Kubernetes Services: https://kubernetes.io/docs/concepts/services-networking/service/  
+  
+  
+### **Task 8: Use Kubernetes Secrets and Environment Variables**  
+  
+**Task Description**  
+Understand how to handle sensitive data and configuration within Kubernetes using Secrets and ConfigMaps. Create a ConfigMap and mount it onto a deployment and let the underlying application use the configuration. Create a Kubernetes Secret with AWS credentials, update deployment YAML to use these Secrets as environment variables, and deploy the updated app. Verify that the app uses the credentials securely to interact with AWS S3.  
+**Expected Task Outcomes**  
+•	Create and apply ConfigMaps to inject non-sensitive configuration into Pods  
+•	Create Kubernetes Secrets to store AWS credentials without hardcoding them  
+•	Mount Secrets as environment variables in a Deployment and verify their consumption  
+•	Understand the difference between Secrets and ConfigMaps and when to use each  
+**Resource Links**  
+•	Kubernetes Secrets: https://kubernetes.io/docs/concepts/configuration/secret/  
+•	Kubernetes ConfigMaps: https://kubernetes.io/docs/concepts/configuration/configmap/  
+  
+**Task 9: Deploy an App to Push Files from Kubernetes to S3**  
+  
+**Task Description**  
+Build and deploy an application on Kubernetes capable of pushing files from a locally hosted app server to AWS S3. Use Kubernetes Secrets for storing AWS credentials securely. Validate the file upload process from the app interface to the S3 bucket and verify files in the cloud storage.  
+**Expected Task Outcomes**  
+•	Build and containerize a file-upload application using a language/framework of your choice  
+•	Deploy the app on Minikube with AWS credentials injected via Kubernetes Secrets  
+•	Successfully upload a file from the app UI/CLI and verify it appears in the S3 bucket  
+•	Integrate all Level 1 concepts: Docker, Kubernetes, IAM, S3, and Secrets into one working pipeline  
+**Resource Links**  
+•	AWS SDK for Python (boto3): https://boto3.amazonaws.com/v1/documentation/api/latest/index.html  
+•	AWS SDK for Node.js: https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/  
+•	Kubernetes Secrets in Pods: https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/  
+  
+---  
+  
+## CY - Cybersecurity  
+Welcome to the Marvel Cybersecurity Module.    
+Level 1 of this module is designed to build a strong foundation by covering the essentials of computer networking, protocols, Windows, Linux, and core cybersecurity principles. These fundamentals are crucial—  cybersecurity is not just about tools, but about understanding how systems work.  
 At its core, cybersecurity follows simple logic:  
  _You can’t protect what you can’t see (or don’t understand), and you can’t break what you don’t know.  
  That’s why mastering these basics is the first step toward becoming skilled in both defending and attacking systems._  
 Once you complete Level 1, we’ll move into the more exciting part—hands-on hacking and defense techniques. Stay tuned!  
    
 Getting Started  
-To begin, you’ll need access to a platform called TryHackMe, where all course materials are hosted. Please follow the steps below to create your account:  
+To begin, you’ll need access to a platform called TryHackMe, where all course materials are hosted. Please follow the steps below to create your account:   
 Step 1: Go to https://tryhackme.com/  
 Step 2: Click on “Join for FREE” (top-right corner)  
 <img width="1167" height="666" alt="image" src="https://github.com/user-attachments/assets/36527282-5926-4c61-b93f-0310bfa81ef9" />  
